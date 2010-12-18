@@ -1,0 +1,19 @@
+Welcome to the JARVIS 1.0 Tutorial.
+
+This is only for Ubuntu 10.04, I have not tested it on other Distros 
+or Operating Systems. Please Read this through before posting questions, 
+this should be fairly simple.
+
+Step By Step:
+	1. Download the weather.py and startup.sh and put them both in your
+home folder. (putting them elsewhere will require a bit of tweaking later.)
+	2. Go to System -> Preferences -> Startup Applications. Uncheck the 
+box for GDM Login Sound, as it would play over our little JARVIS. 
+	3. Click add, and name the new command something like 'JARVIS startup'.
+	4. In the command box type this command -> 
+		sh -c "sleep 10; perl startup.sh
+		#note: the 10 delays the sound for ten seconds at boot up. 
+		I use this to give time for the internet connection to
+		initialize before 
+	5. logout and login to hear it, or to test, type the following command 
+into a terminal to test it. --> perl startup.sh
